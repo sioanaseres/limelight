@@ -32,9 +32,10 @@
     
      <!-- design -->
      
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
-     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+   <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="resources/style.css"/>
      <link rel="icon" type="image/x-icon" href="./favicon.ico"/>
      <link rel="icon" type="image/svg+xml" href="./favicon.svg"/>
@@ -57,7 +58,7 @@
      </script>
 
    
-
+    <script defer src="main.js"></script>
 
 
     
@@ -79,20 +80,20 @@
               <a class="nav-link active fs-6 ms-5 text-center " aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-6 ms-5 text-center" href="#">About</a>
+              <a class="nav-link fs-6 ms-5 text-center" href="#about">About</a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link fs-6 ms-5 text-center" href="#">Services</a>
+              <a class="nav-link fs-6 ms-5 text-center" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-6 ms-5 text-center" href="#">Blog</a>
+              <a class="nav-link fs-6 ms-5 text-center" href="#blog">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-6  ms-5 text-center" href="#">Gallery</a>
+              <a class="nav-link fs-6  ms-5 text-center" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-6  ms-5 text-center" href="#">Contact Us</a>
+              <a class="nav-link fs-6  ms-5 text-center" href="#contact">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -102,11 +103,13 @@
 
 <main>
 
-  <div class="position-relative overflow-hidden p-3 p-md-5  text-center hero">
-    <div class=" p-lg-5 m-lg my-5  ">
-      <h1 class=" display-2 fw-bold " >Design of Furniture</h1>
-      <p class=" fw-bold fs-6  ">There are many variations of passages of Lorem Ipsum available</p>
-      <a class="btn btn-light btn text-uppercase fw-bold rounded-pill  " href="#">Read More</a>
+  <div class="position-relative overflow-hidden  text-center hero bg-image ">
+    <img src="./images/heroImage.webp" class="w-100 img-fluid" width="1500" height="500"/>
+    <div class="mask position-absolute top-0 end-0 bottom-0 start-0 hero-mask" ></div>
+    <div class="  m-lg my-5 d-flex flex-column align-items-center align-items-lg-start hero-mask-text">
+      <h1 class=" display-2 fw-bold  text-lg-start" >Design of Furniture</h1>
+      <p class=" fw-bold fs-6 pb-4  ">There are many variations of passages of Lorem Ipsum available</p>
+      <a class="btn btn-light btn text-uppercase fw-bold rounded-pill pt-3 pb-3 " href="#">Read More</a>
     </div>
     <div class="product-device shadow-sm d-none d-md-block"></div>
     <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
@@ -116,20 +119,20 @@
   <div class=" marketing pt-5 mt-5  ms-0 me-0">
 
    
-    <div class="  d-flex justify-content-between  justify-content-sm-center  align-items-center flex-column  flex-lg-row ms-1 me-1 " >
+    <div class="  d-flex justify-content-between  justify-content-sm-center  align-items-center flex-column  flex-lg-row ms-1 me-1 " id="about" >
         <div class="container col-10  col-md-8 col-lg-6  ms-3 me-3 ">
-          <h2 class=" fs-1 fw-bold mt-3">About <span >Us</span></h2>
-          <p class=" lead ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis reprehenderit quibusdam iusto, consequatur rem explicabo nostrum perspiciatis unde consequuntur quos maiores aliquam a incidunt dolores quia facere illo dolorem dolorum. Nulla sit quos consequatur nesciunt enim excepturi? Sed necessitatibus magni cum delectus amet? Porro, commodi beatae. Aliquid magnam dignissimos assumenda?</p>
-          <button type="button" class=" btn-dark px-5 py-2">Read More</button>
+          <h2 class=" fs-1 fw-bold mt-3 pb-3">About <span >Us</span></h2>
+          <p class=" lead pb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis reprehenderit quibusdam iusto, consequatur rem explicabo nostrum perspiciatis unde consequuntur quos maiores aliquam a incidunt dolores quia facere illo dolorem dolorum. Nulla sit quos consequatur nesciunt enim excepturi? Sed necessitatibus magni cum delectus amet? Porro, commodi beatae. Aliquid magnam dignissimos assumenda?</p>
+          <button type="button" class=" btn-dark px-5 py-2 mb-5">Read More</button>
         </div>
      
         <div class=" about-div bg-light  position-relative ms-5 mt-sm-5 ">  
-           <img src="./images/team.webp" class=" about position-absolute " alt="About us image" width="400" height="300"> 
+           <img src="./images/team.webp" class=" about position-absolute img-fluid " alt="About us image" width="400" height="300"> 
         </div>
     </div>
 
     
-      <div class="  d-flex  justify-content-center align-items-center flex-column ms-1 me-1 mb-5 mt-5" >
+      <div class="  d-flex  justify-content-center align-items-center flex-column ms-1 me-1 mb-5 mt-5" id="services">
         <h2 class=" fs-1 fw-bold mt-3">Our <span >Services</span></h2>
         <div class="container d-flex justify-content-center align-items-center flex-column ">
        
@@ -165,7 +168,7 @@
 
       
 
-      <div class="  d-flex  justify-content-center align-items-center flex-column  ms-0 me-0 mb-5 mt-5 bg-light" >
+      <div class="  d-flex  justify-content-center align-items-center flex-column  ms-0 me-0 mb-5 mt-5 bg-light" id = "gallery">
         <div class="container ">
           <h2 class=" fs-1 fw-bold mt-5 text-center mb-3 ">Our <span >Gallery</span></h2>
           <p class="lead fs-6 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat molestiae ipsa temporibus, blanditiis odit, quo nihil alias ipsum quia ex velit amet magnam. Impedit, dolorem?</p>
@@ -257,7 +260,7 @@
      
       </div>
 
-      <div class="  d-flex justify-content-center justify-content-lg-around   align-items-center flex-column  flex-lg-row ms-1 me-1 " >
+      <div class="  d-flex justify-content-center justify-content-lg-around   align-items-center flex-column  flex-lg-row ms-1 me-1 margin-bottom"  >
         <div class="container col-10  col-md-8 col-lg-4  ms-3 me-3 d-flex justify-content-between  justify-content-sm-center  align-items-center flex-column ">
           <h2 class=" fs-1 fw-bold mt-3 text-center">New Ideas <span >Design</span></h2>
           <p class=" lead text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis reprehenderit quibusdam iusto, consequatur rem explicabo nostrum perspiciatis unde consequuntur quos maiores.</p>
@@ -268,16 +271,18 @@
          
         </div>
      
-        <div class=" bg-dark text-white position-relative col-md-8">
-          <img class="new-ideas img-fluid" src="./images/new-ideas.webp" alt="New Ideas Design Image" width="1400" height="600">
-      
-            <h5 class=" position-absolute top-50 start-50 translate-middle fs-6">Perferendis reprehenderit quibusdam iusto.</h5>
+        <div class="  text-white position-relative col-10 col-lg-5 col-xl-6  slider overflow-hidden">
+          <img class="slide  img-fluid position-absolute" src="./images/new-ideas.webp" alt="New Ideas Design Image" width="1200" height="450">
+          <img class="slide  img-fluid position-absolute" src="./images/news.webp" alt="New Ideas Design Image" width="1200" height="450">
+          <img class="slide  img-fluid position-absolute" src="./images/gallery6.webp" alt="New Ideas Design Image" width="1200" height="450">
+         
+            <h5 class=" position-absolute top-50 start-50 translate-middle fs-6 ">Perferendis reprehenderit quibusdam iusto.</h5>
         
         </div>
      
     </div>
 
-    <div class="  d-flex  justify-content-center align-items-center flex-column  ms-0 me-0 mb-5 mt-5  margin-bottom" >
+    <div class="  d-flex  justify-content-center align-items-center flex-column  ms-0 me-0 mb-5 mt-5  margin-bottom" id="blog" >
       <div class="container ">
         <h2 class=" fs-1 fw-bold mt-5 text-center mb-3 ">Read Our <span >Latest News</span></h2>
         
@@ -286,105 +291,212 @@
       <div class="album py-5 ">
         <div class="container mb-5">
     
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">
+          <div class="row row-cols-1 row-cols-lg-2 g-2">
             <div class="container d-flex align-items-end flex-column position-relative">
-            <div class="col-8 ">
+            <div class="col-12 col-md-8">
               <div class="card shadow-sm ">
                <div class="container bg-dark d-flex align-items-start justify-content-end flex-column  card-box">
                 
                 <p class="fs-6 text-light text-start fw-lighter">Post By :limelight</p>
                 <div class="d-flex align-items-start justify-content-between">
-                  <p class="fs-6 text-light text-start fw-lighter">Like </p>
-               
-                  <p class="fs-6 text-light text-start fw-lighter">Comment</p>
+                  <p class="fs-6 text-light text-start fw-lighter pe-2">Like </p>
+                  <div class="mx-1 pe-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#fff" class="bi bi-heart" viewBox="0 0 16 16">
+                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                    </svg>
+                  </div>
+                  <p class="fs-6 text-light text-start fw-lighter pe-2">Comment</p>
+                  <div class="mx-1 pe-2">
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"  d="M19,2 C20.5949286,2 21.9034643,3.25157398 21.9948968,4.82401157 L22,5 L22,15 C22,16.5949286 20.748426,17.9034643 19.1759884,17.9948968 L19,18 L15.5,18 L12.8,21.6 C12.611,21.852 12.315,22 12,22 C11.724375,22 11.4632969,21.8866875 11.2757187,21.6895391 L11.2,21.6 L8.5,18 L5,18 C3.40507143,18 2.09653571,16.748426 2.00510323,15.1759884 L2,15 L2,5 C2,3.40507143 3.25157398,2.09653571 4.82401157,2.00510323 L5,2 L19,2 Z M19,4 L5,4 C4.48835714,4 4.06466327,4.38714796 4.00674599,4.88361625 L4,5 L4,15 C4,15.5116429 4.38714796,15.9353367 4.88361625,15.993254 L5,16 L9,16 C9.275625,16 9.53670313,16.1133125 9.72428125,16.3104609 L9.8,16.4 L12,19.333 L14.2,16.4 C14.365375,16.1795 14.6126719,16.038625 14.8829375,16.0068516 L15,16 L19,16 C19.5116429,16 19.9353367,15.612852 19.993254,15.1163837 L20,15 L20,5 C20,4.48835714 19.612852,4.06466327 19.1163837,4.00674599 L19,4 Z M17,11 C17.552,11 18,11.448 18,12 C18,12.5125714 17.6137143,12.9354694 17.1165685,12.9932682 L17,13 L7,13 C6.448,13 6,12.552 6,12 C6,11.4874286 6.38628571,11.0645306 6.88343149,11.0067318 L7,11 L17,11 Z M17,7 C17.552,7 18,7.448 18,8 C18,8.51257143 17.6137143,8.93546939 17.1165685,8.99326822 L17,9 L7,9 C6.448,9 6,8.552 6,8 C6,7.48742857 6.38628571,7.06453061 6.88343149,7.00673178 L7,7 L17,7 Z"/>
+                    </svg>
+                    
+                  </div>
                   <p class="fs-6 text-light text-start fw-lighter">Share</p>
+                  <div class="mx-1">
+                    <svg fill="#fff" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><path d="M 18 2 C 16.35499 2 15 3.3549904 15 5 C 15 5.1909529 15.021791 5.3771224 15.056641 5.5585938 L 7.921875 9.7207031 C 7.3985399 9.2778539 6.7320771 9 6 9 C 4.3549904 9 3 10.35499 3 12 C 3 13.64501 4.3549904 15 6 15 C 6.7320771 15 7.3985399 14.722146 7.921875 14.279297 L 15.056641 18.439453 C 15.021555 18.621514 15 18.808386 15 19 C 15 20.64501 16.35499 22 18 22 C 19.64501 22 21 20.64501 21 19 C 21 17.35499 19.64501 16 18 16 C 17.26748 16 16.601593 16.279328 16.078125 16.722656 L 8.9433594 12.558594 C 8.9782095 12.377122 9 12.190953 9 12 C 9 11.809047 8.9782095 11.622878 8.9433594 11.441406 L 16.078125 7.2792969 C 16.60146 7.7221461 17.267923 8 18 8 C 19.64501 8 21 6.6450096 21 5 C 21 3.3549904 19.64501 2 18 2 z M 18 4 C 18.564129 4 19 4.4358706 19 5 C 19 5.5641294 18.564129 6 18 6 C 17.435871 6 17 5.5641294 17 5 C 17 4.4358706 17.435871 4 18 4 z M 6 11 C 6.5641294 11 7 11.435871 7 12 C 7 12.564129 6.5641294 13 6 13 C 5.4358706 13 5 12.564129 5 12 C 5 11.435871 5.4358706 11 6 11 z M 18 18 C 18.564129 18 19 18.435871 19 19 C 19 19.564129 18.564129 20 18 20 C 17.435871 20 17 19.564129 17 19 C 17 18.435871 17.435871 18 18 18 z"/></svg>
+                  </div>
                 </div>
                  <h4 class="text-light fs-5">Interior Design</h4>
                  <p class="fs-6 text-light text-start fw-lighter">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
                </div>
               </div>
             </div>
-            <img class="position-absolute top-0 image-news-right" src="./images/news.webp" alt="Latest News Image" width="480" height="320">
+            <img class="position-absolute top-0 image-news-right img-fluid" src="./images/news.webp" alt="Latest News Image" width="480" height="320">
           </div>
           <div class="container d-flex align-items-start flex-column position-relative">
-            <div class="col-8">
+            <div class="col-12 col-md-8">
               <div class="card shadow-sm ">
                <div class="container bg-white d-flex align-items-start justify-content-end flex-column  card-box ">
                 <p class="fs-6 text-dark text-start fw-lighter">Post By :limelight</p>
-                <div class="d-flex align-items-center justify-content-between">
-                  <p class="fs-6 text-dark text-start fw-lighter">Like </p>
-                <div class="mx-1 ">
+                <div class="d-flex align-items-start justify-content-between">
+                  <p class="fs-6 text-dark text-start fw-lighter pe-2">Like </p>
+                <div class="mx-1 pe-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                     <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                   </svg>
                 </div>
                  
-                  <p class="fs-6 text-dark text-start fw-lighter">Comment</p>
-                  <p class="fs-6 text-dark text-start fw-lighter">Share</p>
+                  <p class="fs-6 text-dark text-start fw-lighter pe-2">Comment</p>
+                  <div class="mx-1 pe-2">
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M19,2 C20.5949286,2 21.9034643,3.25157398 21.9948968,4.82401157 L22,5 L22,15 C22,16.5949286 20.748426,17.9034643 19.1759884,17.9948968 L19,18 L15.5,18 L12.8,21.6 C12.611,21.852 12.315,22 12,22 C11.724375,22 11.4632969,21.8866875 11.2757187,21.6895391 L11.2,21.6 L8.5,18 L5,18 C3.40507143,18 2.09653571,16.748426 2.00510323,15.1759884 L2,15 L2,5 C2,3.40507143 3.25157398,2.09653571 4.82401157,2.00510323 L5,2 L19,2 Z M19,4 L5,4 C4.48835714,4 4.06466327,4.38714796 4.00674599,4.88361625 L4,5 L4,15 C4,15.5116429 4.38714796,15.9353367 4.88361625,15.993254 L5,16 L9,16 C9.275625,16 9.53670313,16.1133125 9.72428125,16.3104609 L9.8,16.4 L12,19.333 L14.2,16.4 C14.365375,16.1795 14.6126719,16.038625 14.8829375,16.0068516 L15,16 L19,16 C19.5116429,16 19.9353367,15.612852 19.993254,15.1163837 L20,15 L20,5 C20,4.48835714 19.612852,4.06466327 19.1163837,4.00674599 L19,4 Z M17,11 C17.552,11 18,11.448 18,12 C18,12.5125714 17.6137143,12.9354694 17.1165685,12.9932682 L17,13 L7,13 C6.448,13 6,12.552 6,12 C6,11.4874286 6.38628571,11.0645306 6.88343149,11.0067318 L7,11 L17,11 Z M17,7 C17.552,7 18,7.448 18,8 C18,8.51257143 17.6137143,8.93546939 17.1165685,8.99326822 L17,9 L7,9 C6.448,9 6,8.552 6,8 C6,7.48742857 6.38628571,7.06453061 6.88343149,7.00673178 L7,7 L17,7 Z"/>
+                    </svg>
+                    
+                  </div>
+                  <p class="fs-6 text-dark text-start fw-lighter pe-2" >Share</p>
+                  <div class="mx-1">
+                    <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><path d="M 18 2 C 16.35499 2 15 3.3549904 15 5 C 15 5.1909529 15.021791 5.3771224 15.056641 5.5585938 L 7.921875 9.7207031 C 7.3985399 9.2778539 6.7320771 9 6 9 C 4.3549904 9 3 10.35499 3 12 C 3 13.64501 4.3549904 15 6 15 C 6.7320771 15 7.3985399 14.722146 7.921875 14.279297 L 15.056641 18.439453 C 15.021555 18.621514 15 18.808386 15 19 C 15 20.64501 16.35499 22 18 22 C 19.64501 22 21 20.64501 21 19 C 21 17.35499 19.64501 16 18 16 C 17.26748 16 16.601593 16.279328 16.078125 16.722656 L 8.9433594 12.558594 C 8.9782095 12.377122 9 12.190953 9 12 C 9 11.809047 8.9782095 11.622878 8.9433594 11.441406 L 16.078125 7.2792969 C 16.60146 7.7221461 17.267923 8 18 8 C 19.64501 8 21 6.6450096 21 5 C 21 3.3549904 19.64501 2 18 2 z M 18 4 C 18.564129 4 19 4.4358706 19 5 C 19 5.5641294 18.564129 6 18 6 C 17.435871 6 17 5.5641294 17 5 C 17 4.4358706 17.435871 4 18 4 z M 6 11 C 6.5641294 11 7 11.435871 7 12 C 7 12.564129 6.5641294 13 6 13 C 5.4358706 13 5 12.564129 5 12 C 5 11.435871 5.4358706 11 6 11 z M 18 18 C 18.564129 18 19 18.435871 19 19 C 19 19.564129 18.564129 20 18 20 C 17.435871 20 17 19.564129 17 19 C 17 18.435871 17.435871 18 18 18 z"/></svg>
+                  </div>
                 </div>
                  <h4 class="text-dark fs-5">Arhitecture</h4>
                  <p class="fs-6 text-dark text-start fw-lighter">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
                </div>
               </div>
             </div>
-            <img class="position-absolute top-0 image-news-left" src="./images/news.webp" alt="Latest News Image" width="480" height="320">
+            <img class="position-absolute top-0 image-news-left img-fluid" src="./images/news.webp" alt="Latest News Image" width="480" height="320">
           </div>
           </div>
         </div>
       </div>
-      <button type="button" class=" btn-dark px-5 py-2">Read More</button>
-    </div>
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
+      <button type="button" class=" btn-dark px-5 py-2 margin-bottom">Read More</button>
     </div>
 
-    <hr class="featurette-divider">
-
-    <!-- /END THE FEATURETTES -->
-
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Heading</h2>
-        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Heading</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
+    <div class="  d-flex justify-content-center justify-content-lg-around  align-items-center flex-column  flex-xl-row ms-1 me-1 slider-testimonial" >
+      <div class=" bg-dark text-white position-relative col-10  col-xl-8 p-1 pt-5  d-flex justify-content-center  align-items-center flex-column flex-lg-row margin-bottom ">
+      
+        <div class="container bg-dark card-testimonial position-relative p-3 p-md-5  my-5 col-8 col-lg-5 col-xl-4 ">
+     
+            <img src="./images/testimonial1.webp" alt="Testimonial image" width="120" height="120" class="position-absolute rounded-circle ">
+            <h5 class=" text-light pt-5">First Person</h5>
+            <p class=" text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi possimus quidem cupiditate autem? Veritatis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi possimus quidem cupiditate autem? Veritatis.</p>
+           
+       
+        </div>
+        
+        <div class="container bg-dark card-testimonial position-relative p-3 p-md-5 my-5 col-8 col-lg-5 col-xl-4 " >
+     
+          <img src="./images/testimonial2.webp" alt="Testimonial image" width="120" height="120" class="position-absolute rounded-circle ">
+          <h5 class=" text-light pt-5">Second Person</h5>
+          <p class=" text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi possimus quidem cupiditate autem? Veritatis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi possimus quidem cupiditate autem? Veritatis.</p>
+         
+     
+      </div>
+      </div>
+      <div class="container col-10  col-md-8 col-lg-3  ms-3 me-3 d-flex justify-content-between  justify-content-sm-center  align-items-center flex-column mt-5 ">
+        <h2 class=" fs-1 fw-bold mt-3 text-center mb-5">Testimonial</h2>
+       
+        <div class="container d-flex align-items-center justify-content-center mb-5">
+          <button type="button" class="btn-black text-light fs-3 ">&#8249;</button>
+          <button type="button" class="btn-green fs-3 ms-3">&#8250;</button>
+        </div>
+       
+      </div>
+   
+     
+   
+  </div>
+  
+  <div class="position-relative overflow-hidden  text-center contact bg-image contact " id="contact">
+    <img src="./images/contact.webp" class="w-100 img-fluid contact-img" width="1500" height="400"/>
+    <div class="mask position-absolute top-0 end-0 bottom-0 start-0 hero-mask" ></div>
+    
+    <div class="d-flex align-items-center justify-content-center flex-column  ">
+      <div class="container position-absolute form-contact d-flex align-items-start justify-content-center flex-column ">
+        <h4 class="text-uppercase text-light text-start fw-bold mb-5 ">Contact Us</h4>
+        <div class="mb-3 col-8 col-xl-4">
+          <label for="name" class="form-label d-none">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Name">
+        </div>
+        <div class="mb-3 col-8 col-xl-4">
+          <label for="email" class="form-label d-none">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+        <div class="mb-3 col-8 col-xl-4">
+          <label for="phone" class="form-label d-none">Phone number</label>
+          <input type="text" class="form-control" id="phone" placeholder="Phone number">
+        </div>
+        <div class="mb-5 col-8 col-xl-4">
+          <label for="message" class="form-label d-none">Message</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
+        </div>
+        <button type="button" class="btn btn-lg btn-outline-light text-uppercase fw-bold " style="border-radius: 0;">Send</button>
+        
+      </div>
+      <img src="./images/map.webp" alt="Contact Us Map" width="500" height="300" class=" d-none d-xl-block map position-absolute ">
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+ 
+ 
   </div><!-- /.container -->
 
-
-  <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-  </footer>
 </main>
+  <!-- FOOTER -->
+  <footer class=" bg-dark pt-5 position-relative">
+    <div class="container bg-dark text-light d-flex align-items-center justify-content-center flex-column flex-lg-row align-items-lg-start margin-bottom">
+      <div class="container bg-dark text-light d-flex align-items-start justify-content-between pb-5">
+        <div class="container bg-dark text-light d-flex align-items-start justify-content-center flex-column col-4 col-lg-3 col-xl-4 p-2">
+          <div class="container  bg-dark text-light d-flex align-items-start justify-content-start pb-3 ps-0">
+            <img src="./images/icons8-facebook.svg" alt="Facebook logo" width="30" height="30"> 
+            <img src="./images/icons8-twitter-circled.svg" alt="Twitter logo" width="30" height="30">
+            <img src="./images/icons8-linkedin-circled.svg" alt="LinkedIn logo" width="30" height="30">
+            <img src="./images/icons8-instagram-circle.svg" alt="Instagram logo" width="30" height="30">
+          </div>
+          <p class="text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, aliquid.met consectetur adipisicing elit. Maxime, aliquid</p>
+        </div>
+        <div class="container bg-dark text-light d-flex align-items-start justify-content-start flex-column col-4 col-lg-3 col-xl-4 p-2">
+         <h4 class="text-uppercase">Let us help you</h4>
+          <p class="text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, aliquid. met consectetur adipisicing elit. Maxime, aliquid</p>
+        </div>
+      </div>
+      <div class="container bg-dark text-light d-flex align-items-start justify-content-between">
+        <div class="container bg-dark text-light d-flex align-items-start justify-content-start flex-column col-4 col-lg-3 col-xl-4 p-2">
+          <h4 class="text-uppercase">Information</h4>
+        <ul class="navbar-nav">
+          <li class="">
+            <a class = " text-decoration-none text-light" href="#">Home</a>
+          </li>
+          <li class="">
+            <a class = " text-decoration-none text-light" href="#">About</a>
+          </li>
+          <li class="">
+            <a class = " text-decoration-none text-light" href="#">Services</a>
+          </li>
+          <li class="">
+            <a  class = "text-decoration-none text-light" href="#">Gallery</a>
+          </li>
+          <li class="">
+            <a class = "text-decoration-none text-light" href="#">Testimonial</a>
+          </li>
+          <li class="">
+            <a class = "text-decoration-none text-light" href="#">Contact Us</a>
+          </li>
+        </ul>
+        </div>
+        <div class="container bg-dark text-light d-flex align-items-start justify-content-center flex-column col-4 col-lg-3 col-xl-4 p-2 ">
+          <h4 class="text-uppercase">Our Design</h4>
+          <p class="text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, aliquid.met consectetur adipisicing elit. Maxime, aliquid</p>
+        </div>
+      
+      </div>
+      
+    </div>
+    <div class="mb-3 row position-absolute subscribe ">
+          
+      <div class="col-sm-10 px-0 d-flex align-items-center justify-content-around">
+        <input type="text"  class="form-control-plaintext text-secondary" id="staticEmail" value="Enter your email">
+        <button class="btn btn-link text-uppercase text-light">Subscribe</button>
+      </div>
+      
+    </div>
+  <p class="py-3 text-center bg-white">&copy; 2022 Limelight Design  </p>
+  </footer>
 
 
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
 
       
   </body>
