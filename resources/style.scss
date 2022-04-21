@@ -16,7 +16,7 @@ body { display: block; min-height: 100vh; margin: 0; text-rendering: optimizeSpe
 .navbar{font-family: 'Open Sans', sans-serif;}
   
 .hero img{height: 55vh; 
-	@media (min-width:992px){height: auto;}
+	@media (min-width:992px){height: 70vh;}
 	}
 
 .hero-mask{background: rgba(51, 240, 51, 0.8);}
