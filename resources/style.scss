@@ -15,13 +15,14 @@ body { display: block; min-height: 100vh; margin: 0; text-rendering: optimizeSpe
 
 .navbar{font-family: 'Open Sans', sans-serif;}
   
-.hero img{height: 45vh; 
-	@media (min-width:992px){height: auto;}}
+.hero img{height: 55vh; 
+	@media (min-width:992px){height: auto;}
+	}
 
 .hero-mask{background: rgba(51, 240, 51, 0.8);}
 .hero-mask-text{position: absolute; top: 20%; right: 20%; left: 20%; 
 @media (min-width:992px) {left: 50%; top: 10%;}
-@media (min-width:992px){top: 25%;}}
+@media (min-width:1200px){top: 25%;}}
 .hero h1{ color: #0d0c0c;  }
 .hero p{color: white;  }
 .hero a{padding-left: 2rem; padding-right: 2rem;
@@ -33,7 +34,9 @@ body { display: block; min-height: 100vh; margin: 0; text-rendering: optimizeSpe
 .about-div{height: 20rem; width: 20rem; max-width: 100%;
 	@media (min-width:390px){height: 25rem; width: 25rem; } }
 .about {top:10%; left: -15%;}
-.margin-bottom{margin-bottom: 10rem;}
+.margin-bottom{margin-bottom: 5rem;
+	@media (min-width:1000px){margin-bottom: 10rem;}
+}
 
 .gallery-thumb{ height: 20rem;
 	@media (min-width: 576px){height: 16rem};
