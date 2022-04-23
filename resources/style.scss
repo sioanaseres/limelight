@@ -15,8 +15,8 @@ body { display: block; min-height: 100vh; margin: 0; text-rendering: optimizeSpe
 
 .navbar{font-family: 'Open Sans', sans-serif;}
   
-.hero img{height: 58vh; 
-	@media (min-width:992px){height: 70vh;}
+.hero img{height: 30rem; 
+	@media (min-width:992px){height: 42rem;}
 	}
 
 .hero-mask{background: rgba(51, 240, 51, 0.8);}
@@ -69,9 +69,11 @@ body { display: block; min-height: 100vh; margin: 0; text-rendering: optimizeSpe
 	@media (min-width:420px){left: 5%;}}
 
 
-.card-testimonial{border: 1px solid #33f033; border-radius: 0.5rem; height: 40vh;}
+.card-testimonial{border: 1px solid #33f033; border-radius: 0.5rem; height: 20rem;
+	@media (min-width: 800px){height: 30rem;}}
 .card-testimonial img{top: -5rem; left: 2rem; border: 1px solid #33f033}
-.slider-testimonial{height: 60vh;}
+.slider-testimonial{height: 35rem;
+	@media (min-width: 800px){height: 45rem}}
 .slide-testimonial{top: 10%; transition: transform 1s ease-in-out ;}
 
 .contact{height: 50%;}
